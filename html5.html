@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Pendaftaran Klinik Kampus - UNIPDU</title>
+</head>
+<body>
+
+<header>
+    <h1>Pendaftaran Klinik Kampus - UNIPDU</h1>
+</header>
+
+<main>
+    <section>
+        <h2>FORMULIR SURVEY DASAR</h2>
+
+        <article>
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td><label for="nama">Nama Lengkap:</label></td>
+                        <td><input type="text" id="nama" name="nama" autofocus required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin:</td>
+                        <td>
+                            <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>
+                            <label for="laki">Laki-laki</label>
+                            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                            <label for="perempuan">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hobi :</td>
+                        <td>
+                            <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+                            <label for="membaca">Membaca</label><br />
+                            <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+                            <label for="olahraga">Olahraga</label><br />
+                            <input type="checkbox" id="coding" name="hobi[]" value="Coding">
+                            <label for="coding">Coding</label><br>
+                            <input type="checkbox" id="hiking" name="hobi[]" value="Hiking">
+                            <label for="hiking">Hiking</label><br />
+                            <input type="checkbox" id="menulis" name="hobi[]" value="Menulis">
+                            <label for="menulis">Menulis</label><br />
+                            <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+                            <label for="musik">Musik</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="kota">Asal Kota:</label></td>
+                        <td>
+                            <select id="kota" name="asal_kota" required>
+                                <option value="" disabled selected>Pilih kota</option>
+                                <option value="Jombang">Jombang</option>
+                                <option value="Surabaya">Surabaya</option>
+                                <option value="Bandung">Bandung</option>
+                                <option value="Yogyakarta">Yogyakarta</option>
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="komentar">Komentar:</label></td>
+                        <td>
+                            <textarea id="komentar" name="komentar" rows="4" cols="30" placeholder="Tulis komentar Anda..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">KIRIM DATA (POST)</button></td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+    </section>
+
+    <section>
+        <h3>Jadwal Dokter</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hari</th>
+                    <th>Jam Praktik</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Senin</td>
+                    <td>08:00 - 12:00</td>
+                </tr>
+                <tr>
+                    <td>Rabu</td>
+                    <td>13:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Jumat</td>
+                    <td>09:00 - 11:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>Langkah Pendaftaran</h3>
+        <ol>
+            <li>Isi formulir dengan lengkap.</li>
+            <li>Klik tombol "KIRIM DATA (POST)".</li>
+            <li>Tunggu konfirmasi email.</li>
+        </ol>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Klinik Kampus UNIPDU</p>
+</footer>
+
+</body>
+</html>
